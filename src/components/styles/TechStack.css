@@ -1,0 +1,108 @@
+.techstack {
+  position: relative;
+  z-index: 2;
+  padding: 100px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.techstack h2 {
+  font-size: 70px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 4px;
+  opacity: 0.9;
+  z-index: 101;
+}
+
+.tech-categories {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 100;
+}
+
+.tech-cat-wrapper {
+  position: relative;
+}
+
+.tech-cat-btn {
+  padding: 10px 24px;
+  background: rgba(168, 85, 247, 0.1);
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #d8b4fe;
+  letter-spacing: 1px;
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tech-cat-wrapper:hover .tech-cat-btn,
+.tech-cat-wrapper.active .tech-cat-btn {
+  background: rgba(168, 85, 247, 0.25);
+  border-color: var(--accentColor);
+  color: #fff;
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.2);
+}
+
+.tech-dropdown {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  background: rgba(15, 0, 44, 0.95);
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  border-radius: 12px;
+  padding: 15px;
+  width: 200px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.tech-cat-wrapper:hover .tech-dropdown,
+.tech-cat-wrapper.active .tech-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+.tech-dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.tech-dropdown li {
+  font-size: 14px;
+  color: #adacac;
+  padding: 8px 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  transition: color 0.2s ease;
+}
+
+.tech-dropdown li:last-child {
+  border-bottom: none;
+}
+
+.tech-dropdown li:hover {
+  color: var(--accentColor);
+}
+
+.tech-canvas {
+  height: 500px !important;
+}
