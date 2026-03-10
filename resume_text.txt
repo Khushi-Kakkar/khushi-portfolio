@@ -1,0 +1,101 @@
+KHUSHI KAKKAR 
+ 
+CONTACT 
+ 
++91 9177082210 
+kakkar.khushi@gmail.com 
+khushi1.mitblr2022@learner.mainpal.edu 
+https://www.linkedin.com/in/khushikakkar/  
+ 
+ 
+SKILLS 
+ 
+Programming Languages: Java, Python, C 
+ 
+Web Technologies: HTML, CSS, React.js 
+ 
+Databases: MySQL, DBMS fundamentals 
+ 
+AI-Assisted Development: Cursor 
+(intermediate level), AI-based code generation 
+workflows 
+ 
+Tools & Platforms: Git, AWS (API Gateway, 
+Lambda, Cognito, CloudWatch), VS Code, JIRA 
+ 
+Core CS Concepts: Data Structures & 
+Algorithms, OOP, Operating Systems 
+ 
+AI/ML: Fundamentals of Machine Learning, 
+Prompt-based systems 
+ 
+EDUCATION 
+Bachelor of Engineering (CSE) - Manipal 
+Institute of Technology 
+•  Final Year (Completed 7th semester) 
+•  CGPA: 7.85 
+ 
+Intermediate Public Examination- FIITJEE 
+•  100% PCM in 12th – overall 98% 
+•  Overall, XI and XII - 94.1%  
+ 
+CBSE Secondary School Examination – Meridian 
+School 
+•  Class X 94% 
+ 
+CERTIFICATION 
+ 
+•  Python for Data Science, AI & Development - 
+IBM 
+•  Applied cryptography specialization - 
+University of Colorado System 
+ 
+Computer Science Engineer with strong foundation in Data Structures, Algorithms, 
+and full-stack development. Experienced in delivering production-grade features and 
+leveraging AI-assisted development tools such as Cursor. Eager to contribute to 
+impactful software development and explore emerging technologies 
+ 
+EXPERIENCE 
+ 
+Jul 2025 – Present |Pictory | Software Engineering Intern  
+•     Led end-to-end implementation of enterprise onboarding workflows, 
+redesigning authentication and survey flows to improve user activation. 
+•     Leveraged Cursor AI for accelerated code generation, refactoring, and 
+debugging, reducing development turnaround time significantly. 
+•     Implemented invite auto-acceptance and dynamic user routing (admin 
+vs team invitee) improving onboarding efficiency. 
+•     Designed contextual prompt generation system based on user inputs. 
+•     Built secure serverless proxy using AWS API Gateway + Lambda, 
+integrated Cognito (Google SSO), and enabled monitoring via 
+CloudWatch. 
+•     Collaborated with Product, Design, and QA teams; presented HLDs, 
+effort estimates, and drove E2E testing and issue resolution. 
+ 
+PROJECTS 
+ 
+Healix – A Healthcare Chatbot 
+•     Designed and implemented a fully functional healthcare chatbot as part 
+of a comprehensive project. Utilized Flask, Python, YAML, and React.js 
+to create an interactive user interface and backend. 
+•     Integrated user authentication, chat history management, and a 
+symptom-based query system for personalized responses. 
+•     Implemented APIs and a structured database for seamless data 
+handling and dynamic response generation. 
+ 
+Music Player Website 
+•     Developed a Music Player Website as part of a Database Systems (DBS) 
+project. 
+•     Developed a fully functional music player like Spotify using PHP, 
+React.js, Online SQL, HTML, and CSS 
+•     Integrated various APIs and Online SQL for enhanced functionality and 
+data management 
+ 
+AI DEVELOPMENT EXPERIENCE  
+•     Actively using  Cursor AI  for the past 7 –8 months during internship  . 
+•     Experienced in prompt  -driven code generation, debugging, and rapid 
+feature scaffolding.   
+•     Improved development velocity by combining manual engineering with 
+AI-assisted workflows. 
+•     Comfortable validating, refactoring, and production -hardening AI-
+generated code. 
+----------------Page (0) Break----------------
