@@ -131,11 +131,11 @@ function Pointer({ vec = new THREE.Vector3(), isActive }: PointerProps) {
 }
 
 const techCategories = {
-  Frontend: ["React.js", "Javascript", "HTML5", "CSS"],
-  Backend: ["Node.js", "Python", "Flask", "PHP", "SQL"],
-  "AI / ML": ["Prompt Engineering","Concept Understanding"],
-  Tools: ["Git / GitHub", "VS Code", "Cursor", "Jira", "Postman", "AWS", "Stitch", "Antigravity", "Claude"],
-  Cloud: ["AWS","API Gateway","Lambda","Cognito","EC2","DynsmoDB"]
+  "Languages": ["TypeScript", "JavaScript", "Python", "SQL", "HTML/CSS"],
+  "Frontend": ["React.js", "Vite", "Tailwind CSS", "Framer Motion", "Phaser 3"],
+  "Backend & Cloud": ["Node.js", "Supabase", "Firebase", "AWS", "GCP Cloud Run"],
+  "AI / Agentic": ["Google Gemini", "Claude", "RAG / Pinecone", "Prompt Engineering"],
+  "Tools & Platforms": ["Git", "Cursor", "Antigravity", "Stitch", "Capacitor", "Playwright"]
 };
 
 const TechStack = () => {
@@ -143,27 +143,22 @@ const TechStack = () => {
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
 
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollY = window.scrollY || document.documentElement.scrollTop;
-      const threshold = document
-        .getElementById("work")!
-        .getBoundingClientRect().top;
-      setIsActive(scrollY > threshold);
-    };
-    document.querySelectorAll(".header a").forEach((elem) => {
-      const element = elem as HTMLAnchorElement;
-      element.addEventListener("click", () => {
-        const interval = setInterval(() => {
-          handleScroll();
-        }, 10);
-        setTimeout(() => {
-          clearInterval(interval);
-        }, 1000);
-      });
-    });
-    window.addEventListener("scroll", handleScroll);
+    const techStackElement = document.querySelector(".techstack");
+    if (!techStackElement) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          setIsActive(entry.isIntersecting);
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    observer.observe(techStackElement);
+
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      observer.disconnect();
     };
   }, []);
   const materials = useMemo(() => {

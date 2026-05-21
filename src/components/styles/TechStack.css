@@ -16,7 +16,7 @@
   color: #fff;
   letter-spacing: 4px;
   opacity: 0.9;
-  z-index: 101;
+  z-index: 1;
 }
 
 .tech-categories {
@@ -31,6 +31,12 @@
 
 .tech-cat-wrapper {
   position: relative;
+  z-index: 200;
+}
+
+.tech-cat-wrapper:hover,
+.tech-cat-wrapper.active {
+  z-index: 300;
 }
 
 .tech-cat-btn {
@@ -69,7 +75,7 @@
   visibility: hidden;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   backdrop-filter: blur(20px);
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
   z-index: 1000;
 }
 

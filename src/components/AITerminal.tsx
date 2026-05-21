@@ -4,9 +4,9 @@ import { FaTerminal, FaTimes } from 'react-icons/fa';
 
 const RESPONSES = {
   whois: "Khushi Kakkar is a Software Engineer and Computer Science student at Manipal Institute of Technology. She specializes in building scalable full-stack applications and integrating autonomous AI agents into modern software workflows.",
-  projects: "Featured Projects:\n- HEALIX: AI Healthcare Chatbot using Flask & Python.\n- ECHO: Spotify-like Music Player with advanced UI components.\n- FACE RECOGNITION: Real-time security system using Computer Vision.",
-  skills: "Technical Skillset:\n- FRONTEND: React.js, Next.js, Redux, Tailwind CSS, HTML5/CSS3.\n- BACKEND: Node.js, Express.js, MongoDB, Python, SQL.\n- AI: Prompt Engineering, Agentic Workflows, PyTorch.\n- TOOLS: AWS, VS Code, Git, Jira.",
-  experience: "Current Role: Software Engineering Intern at Pictory (July 2025 - Present).\nWorking on enterprise onboarding, AWS serverless architectures, and AI-accelerated dev cycles.",
+  projects: "Featured Projects:\n- Jarvis: Autonomous AI procurement assistant via voice & Playwright.\n- SoulFuel: Multi-agent RAG pipeline for spiritual guidance.\n- Cr@ppy Bird: Cross-platform 2D game with React, Phaser 3 & offline Sync Outbox.",
+  skills: "Technical Skillset:\n- FRONTEND: React.js, Vite, Tailwind CSS, Phaser 3.\n- BACKEND: Node.js, Express.js, Supabase, Firebase, AWS, Cloud Run.\n- AI / ML: Gemini 3.1, Pinecone, RAG Pipelines, Prompt Engineering.\n- MOBILE / TOOLS: Capacitor, Playwright, Cursor, Git.",
+  experience: "Current Role: Software Engineering Intern at Pictory (July 2025 - Present).\nSpearheaded system-wide email redesigns with AWS SES and architected scalable reminder pipelines using AWS Lambda and EventBridge.",
   contact: "Connect with Khushi:\n- Email: kakkar.khushi@gmail.com\n- LinkedIn: linkedin.com/in/khushikakkar\n- GitHub: github.com/KhushiKakkar",
   help: "Available commands: whois, projects, skills, experience, contact, clear",
 };

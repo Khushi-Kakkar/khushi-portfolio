@@ -36,7 +36,7 @@
 }
 .what-box-in {
   flex-direction: column;
-  height: 500px;
+  height: 600px;
   margin-left: 0;
   position: relative;
   display: flex;
@@ -208,7 +208,16 @@
 }
 .what-content-in {
   height: 100%;
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.what-content-in::-webkit-scrollbar {
+  width: 4px;
+}
+.what-content-in::-webkit-scrollbar-thumb {
+  background: var(--accentColor);
+  border-radius: 10px;
 }
 .what-content-in h5 {
   font-weight: 300;

@@ -5,6 +5,48 @@ import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
 const projects = [
   {
+    title: "SoulFuel",
+    description: "An AI-driven spiritual guidance platform acting as an autonomous 'Digital Sage'. Features a multi-agent RAG pipeline with end-to-end encrypted chat persistence.",
+    features: [
+      "multi-agent LLM orchestration for latency reduction",
+      "Pinecone vector database for scriptural RAG",
+      "end-to-end encrypted chat payload persistence"
+    ],
+    tools: "React • Node.js • Gemini • Pinecone • Firebase",
+    image: "/images/soulfuel.png",
+    links: [
+      { label: "Website", url: "https://www.velosist.com/" },
+      { label: "Android", url: "https://play.google.com/store/apps/details?id=com.velosist.soulfuel" },
+      { label: "iPhone (PWA)", url: "https://soul-fuel-orpin.vercel.app/", hint: "Open in Safari, tap Share, then 'Add to Home Screen'" }
+    ]
+  },
+  {
+    title: "Jarvis",
+    description: "An autonomous AI-driven procurement assistant and agentic browser that uses Gemini 3.1 LLMs to execute cross-platform shopping tasks via voice.",
+    features: [
+      "real-time natural language intent parsing",
+      "headless browser automation via Playwright",
+      "multi-platform stealth e-commerce scraping"
+    ],
+    tools: "React • Node.js • Playwright • Gemini 3.1",
+    image: "/images/jarvis.png",
+  },
+  {
+    title: "Cr@ppy Bird",
+    description: "A cross-platform 2D action game bridging a React UI with a 60fps Phaser 3 WebGL engine. Features a serverless Supabase backend and a custom offline-first Sync Outbox.",
+    features: [
+      "EventBus architecture bridging React and Phaser",
+      "offline-first Sync Outbox for network resilience",
+      "Supabase PostgreSQL global leaderboards"
+    ],
+    tools: "React • Phaser 3 • Supabase • Capacitor",
+    image: "/images/crappy-bird.png",
+    links: [
+      { label: "Website", url: "https://www.velosist.com/crappyBird" },
+      { label: "Android", url: "https://play.google.com/store/apps/details?id=com.jaka.crappybird&pli=1" }
+    ]
+  },
+  {
     title: "Healix",
     description: "AI-powered healthcare chatbot that analyzes symptoms and suggests possible conditions using a structured symptom-disease knowledge base.",
     features: [
@@ -26,39 +68,6 @@ const projects = [
     ],
     tools: "React.js • PHP • SQL • HTML • CSS",
     image: "/images/beatbox.png",
-  },
-  {
-    title: "SoulFuel",
-    description: "A spiritual and mindful application powered by a large-scale scripture metadata enrichment engine.",
-    features: [
-      "scripture metadata enrichment",
-      "multi-threaded batch processing",
-      "psychological parallels integration"
-    ],
-    tools: "Python • AI/LLMs • React",
-    image: "/images/soulfuel.png",
-  },
-  {
-    title: "Jarvis",
-    description: "An autonomous AI procurement interface featuring robust voice-controlled mobile interactions.",
-    features: [
-      "voice-controlled procurement",
-      "speech-to-command pipeline",
-      "full-screen voice capture overlay"
-    ],
-    tools: "React • Capacitor • Voice AI",
-    image: "/images/jarvis.png",
-  },
-  {
-    title: "Cr@ppy Bird",
-    description: "A high-performance cross-platform game with a tactical-satire themed dark mode aesthetic.",
-    features: [
-      "Phaser-based game engine",
-      "React UI layer",
-      "Supabase backend integration"
-    ],
-    tools: "Phaser • React • Supabase • Capacitor",
-    image: "/images/crappy-bird.png",
   },
 ];
 
@@ -145,6 +154,15 @@ const Work = () => {
                           <span className="tools-label">Stack</span>
                           <p>{project.tools}</p>
                         </div>
+                        {project.links && (
+                          <div className="carousel-links" style={{ marginTop: '15px', display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+                            {project.links.map((link, i) => (
+                              <a key={i} href={link.url} target="_blank" rel="noopener noreferrer" style={{ padding: '6px 14px', background: 'rgba(162, 0, 255, 0.15)', border: '1px solid rgba(162, 0, 255, 0.5)', borderRadius: '20px', fontSize: '12px', color: '#fff', textDecoration: 'none', transition: 'all 0.3s ease' }} title={link.hint}>
+                                {link.label}
+                              </a>
+                            ))}
+                          </div>
+                        )}
                       </div>
                     </div>
                     <div className="carousel-image-wrapper">
