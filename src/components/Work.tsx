@@ -27,6 +27,39 @@ const projects = [
     tools: "React.js • PHP • SQL • HTML • CSS",
     image: "/images/beatbox.png",
   },
+  {
+    title: "SoulFuel",
+    description: "A spiritual and mindful application powered by a large-scale scripture metadata enrichment engine.",
+    features: [
+      "scripture metadata enrichment",
+      "multi-threaded batch processing",
+      "psychological parallels integration"
+    ],
+    tools: "Python • AI/LLMs • React",
+    image: "/images/soulfuel.png",
+  },
+  {
+    title: "Jarvis",
+    description: "An autonomous AI procurement interface featuring robust voice-controlled mobile interactions.",
+    features: [
+      "voice-controlled procurement",
+      "speech-to-command pipeline",
+      "full-screen voice capture overlay"
+    ],
+    tools: "React • Capacitor • Voice AI",
+    image: "/images/jarvis.png",
+  },
+  {
+    title: "Cr@ppy Bird",
+    description: "A high-performance cross-platform game with a tactical-satire themed dark mode aesthetic.",
+    features: [
+      "Phaser-based game engine",
+      "React UI layer",
+      "Supabase backend integration"
+    ],
+    tools: "Phaser • React • Supabase • Capacitor",
+    image: "/images/crappy-bird.png",
+  },
 ];
 
 const Work = () => {

@@ -23,6 +23,10 @@ const imageUrls = [
   "/images/aws.webp",
   "/images/github.webp",
   "/images/jira.webp",
+  "/images/claude.png",
+  "/images/cursor.png",
+  "/images/antigravity.png",
+  "/images/stitch.png",
 ];
 const textures = imageUrls.map((url) => textureLoader.load(url));
 
@@ -130,7 +134,7 @@ const techCategories = {
   Frontend: ["React.js", "Javascript", "HTML5", "CSS"],
   Backend: ["Node.js", "Python", "Flask", "PHP", "SQL"],
   "AI / ML": ["Prompt Engineering","Concept Understanding"],
-  Tools: ["Git / GitHub", "VS Code", "Cursor", "Jira", "Postman", "AWS"],
+  Tools: ["Git / GitHub", "VS Code", "Cursor", "Jira", "Postman", "AWS", "Stitch", "Antigravity", "Claude"],
   Cloud: ["AWS","API Gateway","Lambda","Cognito","EC2","DynsmoDB"]
 };
 
@@ -187,6 +191,7 @@ const TechStack = () => {
             className={`tech-cat-wrapper ${activeCategory === category ? 'active' : ''}`}
             onMouseEnter={() => setActiveCategory(category)}
             onMouseLeave={() => setActiveCategory(null)}
+            onClick={() => setActiveCategory(activeCategory === category ? null : category)}
           >
             <button className="tech-cat-btn">{category}</button>
             <div className="tech-dropdown">
