@@ -112,3 +112,20 @@
 .tech-canvas {
   height: 500px !important;
 }
+
+@media (max-width: 768px) {
+  .techstack {
+    padding: 60px 0;
+  }
+  .techstack h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+  .tech-categories {
+    gap: 12px;
+  }
+  .tech-cat-btn {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+}
